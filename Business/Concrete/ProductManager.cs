@@ -34,8 +34,8 @@ namespace Business.Concrete
         public IDataResult<List<Product>> GetAll()
         {
             //Is kodlari
-            //Yetkisi var mi?
-            if (DateTime.Now.Hour==22)
+            //Yetkisi var mi ?
+            if (DateTime.Now.Hour == 1)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }
